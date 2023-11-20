@@ -55,8 +55,6 @@ func handleCommand(command, filename string) {
 	default:
 		fmt.Print(len(content), countFileLines(content), len(strings.Fields(string(content))))
 
-	case "exit":
-		os.Exit(0)
 	}
 }
 
@@ -78,5 +76,3 @@ func countFileLines(bytes []byte) int {
 	}
 	return counter
 }
-
-
